@@ -70,16 +70,14 @@ You can use Simple Accordion with Vanilla JS by calling `new Accordion()`. The `
 var accordion = new Accordion({
   selector: '.accordion', // Selector can be a string for an idividual element
   singleExpand: false, // Allows only one panel to be exapnded at a time
-  expandOnFocus: false, // Expands panels on keyboard focus
+  expandOnFocus: false // Expands panels on keyboard focus
 });
 
 // OR
 
 var elem = document.querySelector('.accordion');
 var accordion = new Accordion({
-  selector: elem, // Allows individual element to be passed instead of a string
-  singleExpand: false, // Allows only one panel to be exapnded at a time
-  expandOnFocus: false, // Expands panels on keyboard focus
+  selector: elem // Allows individual element to be passed instead of a string
 });
 
 ```
