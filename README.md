@@ -7,12 +7,12 @@ Lightweight Accessible Accordions
 ### Download
 
 + CSS:
-  - [simple-accordion.min.css](https://unpkg.com/@rickycourtes/simple-accordion/dist/simple-accordion.min.css) minified, or
-  - [simple-accordion.css](https://unpkg.com/@rickycourtes/simple-accordion/dist/simple-accordion.css) un-minified
+  - [accordion.min.css](https://unpkg.com/@rickycourtes/accordion/dist/accordion.min.css) minified, or
+  - [accordion.css](https://unpkg.com/@rickycourtes/accordion/dist/accordion.css) un-minified
   
 + JavaScript:
-  - [simple-accordion.min.js](https://unpkg.com/@rickycourtes/simple-accordion/dist/simple-accordion.min.js) minified, or
-  - [simple-accordion.js](https://unpkg.com/@rickycourtes/simple-accordion/dist/simple-accordion.js) un-minified
+  - [accordion.min.js](https://unpkg.com/@rickycourtes/accordion/dist/accordion.min.js) minified, or
+  - [accordion.js](https://unpkg.com/@rickycourtes/accordion/dist/accordion.js) un-minified
 
 ### CDN
 
@@ -20,16 +20,16 @@ Link directly to the Simple Accordion files on unpkg.
 
 ``` html 
 <!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/@rickycourtes/simple-accordion/dist/simple-accordion.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@rickycourtes/accordion/dist/accordion.min.css">
 ```
 ``` html
 <!-- JavaScript -->
-<script src="https://unpkg.com/@rickycourtes/simple-accordion/dist/simple-accordion.min.js"></script>
+<script src="https://unpkg.com/@rickycourtes/accordion/dist/accordion.min.js"></script>
 ```
 
 ### Package Managers
 
-Install with npm: `npm install @rickycourtes/simple-accordion`
+Install with npm: `npm install @rickycourtes/accordion`
 
 ## Usage
 
