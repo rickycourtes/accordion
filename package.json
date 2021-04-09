@@ -1,5 +1,5 @@
 {
-  "name": "@rickycourtes/simple-accordion",
+  "name": "@rickycourtes/accordion",
   "version": "1.0.0",
   "description": "Lightweight, full accessible accordions",
   "main": "/js/simple-accordion.js",
@@ -37,5 +37,6 @@
   "homepage": "https://github.com/RickyCourtes/simple-accordion#readme",
   "bin": {
     "simple-accordion": ".eslintrc.js"
-  }
+  },
+  "dependencies": {}
 }
