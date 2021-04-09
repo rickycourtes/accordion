@@ -64,7 +64,7 @@ Accordion works with a container element and a set of child cell elements
 
 #### Initiate with Vanilla JavaScript
 
-You can use Simple Accordion with Vanilla JS by calling `new Accordion()`. The `Accordion()` constructor accepts an options object where you can specify the selector and other options.
+You can use Accordion with Vanilla JS by calling `new Accordion()`. The `Accordion()` constructor accepts an options object where you can specify the selector and other options.
 
 ``` js
 var accordion = new Accordion({
@@ -83,7 +83,7 @@ var accordion = new Accordion({
 ```
 #### Initiate with jQuery
 
-You can use Simple Accordion as a jQuery plugin: $('selector').simpleAccordion().
+You can use Accordion as a jQuery plugin: $('selector').simpleAccordion().
 
 ``` js
 $('.accordion').accordion({
