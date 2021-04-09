@@ -1,6 +1,6 @@
 # Accordion
 
-Lightweight Accessible Accordions
+Lightweight, fully accessible accordions!
 
 ## Install
 
