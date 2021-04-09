@@ -85,6 +85,11 @@ var accordion = new Accordion({
 
 You can use Accordion as a jQuery plugin: `$('selector').accordion()`
 
+``` html
+<!-- JavaScript -->
+<script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/@rickycourtes/accordion/dist/accordion.min.js"></script>
+```
 ``` js
 $('.accordion').accordion({
   singleExpand: true
