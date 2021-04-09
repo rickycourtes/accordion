@@ -16,7 +16,7 @@ Lightweight Accessible Accordions
 
 ### CDN
 
-Link directly to the Simple Accoridon files on unpkg.
+Link directly to the Simple Accordion files on unpkg.
 
 ``` html 
 <!-- CSS -->
