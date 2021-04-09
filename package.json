@@ -2,15 +2,15 @@
   "name": "@rickycourtes/accordion",
   "version": "1.0.0",
   "description": "Lightweight, full accessible accordions",
-  "main": "/js/simple-accordion.js",
-  "style": "/css/simple-accordion.css",
+  "main": "src/js/accordion.js",
+  "style": "src/scss/accordion.scss",
   "scripts": {
     "test": "npm run lint && echo \"View test/ in browser\" && exit 1",
     "lint": "node bin/lint-json.js && npx eslint .",
     "lintFix": "npx eslint . --fix",
     "dist": "npm run buildJS && npm run minifyJS && npm run buildCSS && npm run minifyCSS",
     "buildJS": "node bin/build-js.js",
-    "minifyJS": "npx uglifyjs src/js/simple-accordion.js -o dist/simple-accordion.min.js --mangle --comments /^!/",
+    "minifyJS": "npx uglifyjs src/js/accordion.js -o dist/accordion.min.js --mangle --comments /^!/",
     "buildCSS": "node bin/build-css.js",
     "minifyCSS": "node bin/minify-css.js",
     "version": "node bin/version.js && npm run dist && git add -A src dist"
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RickyCourtes/simple-accordion.git"
+    "url": "git+https://github.com/RickyCourtes/accordion.git"
   },
   "keywords": [
     "accordion",
@@ -32,11 +32,11 @@
   "author": "Ricky Courtes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RickyCourtes/simple-accordion/issues"
+    "url": "https://github.com/RickyCourtes/accordion/issues"
   },
-  "homepage": "https://github.com/RickyCourtes/simple-accordion#readme",
+  "homepage": "https://github.com/RickyCourtes/accordion#readme",
   "bin": {
-    "simple-accordion": ".eslintrc.js"
+    "accordion": ".eslintrc.js"
   },
   "dependencies": {}
 }
