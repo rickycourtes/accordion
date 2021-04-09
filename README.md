@@ -83,7 +83,7 @@ var accordion = new Accordion({
 ```
 #### Initiate with jQuery
 
-You can use Accordion as a jQuery plugin: `$('selector').simpleAccordion()`
+You can use Accordion as a jQuery plugin: `$('selector').accordion()`
 
 ``` js
 $('.accordion').accordion({
