@@ -1,4 +1,4 @@
-# Simple Accordion
+# Accordion
 
 Lightweight Accessible Accordions
 
@@ -16,7 +16,7 @@ Lightweight Accessible Accordions
 
 ### CDN
 
-Link directly to the Simple Accordion files on unpkg.
+Link directly to the Accordion files on unpkg.
 
 ``` html 
 <!-- CSS -->
@@ -33,7 +33,7 @@ Install with npm: `npm install @rickycourtes/accordion`
 
 ## Usage
 
-Simple Accordion works with a container element and a set of child cell elements
+Accordion works with a container element and a set of child cell elements
 
 ``` html
 <div class="accordion">
@@ -64,10 +64,10 @@ Simple Accordion works with a container element and a set of child cell elements
 
 #### Initiate with Vanilla JavaScript
 
-You can use Simple Accordion with Vanilla JS by calling `new SimpleAccordion()`. The SimpleAccordion() constructor acceptsan options object where you can specify the selector and other options.
+You can use Simple Accordion with Vanilla JS by calling `new Accordion()`. The `Accordion()` constructor acceptsan options object where you can specify the selector and other options.
 
 ``` js
-var accordion = new SimpleAccordion({
+var accordion = new Accordion({
   selector: '.accordion', // Selector can be a string for an idividual element
   singleExpand: false, // Allows only one panel to be exapnded at a time
   expandOnFocus: false, // Expands panels on keyboard focus
@@ -76,7 +76,7 @@ var accordion = new SimpleAccordion({
 // OR
 
 var elem = document.querySelector('.accordion');
-var accordion = new SimpleAccordion({
+var accordion = new Accordion({
   selector: elem, // Allows individual element to be passed instead of a string
   singleExpand: false, // Allows only one panel to be exapnded at a time
   expandOnFocus: false, // Expands panels on keyboard focus
@@ -88,7 +88,7 @@ var accordion = new SimpleAccordion({
 You can use Simple Accordion as a jQuery plugin: $('selector').simpleAccordion().
 
 ``` js
-$('.accordion').simpleAccordion({
+$('.accordion').accordion({
   singleExpand: true
 });
 ```

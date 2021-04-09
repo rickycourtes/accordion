@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  function SimpleAccordion(options) {
+  function Accordion(options) {
 
     let _this = this;
     let defaultOptions = {
@@ -27,7 +27,7 @@
 
       if (!this.selector) {
         if (console) {
-          console.error('Invalid element for Simple Accordion: ' + (queryElement || element));
+          console.error('Invalid element for Accordion: ' + (queryElement || element));
         }
         return;
       }
@@ -77,12 +77,12 @@
   
   if (window.jQuery) {
     var $ = window.jQuery;
-    $.fn['simpleAccordion'] = function(options) {
+    $.fn['accordion'] = function(options) {
       options = options || {};
       return this.each(function() {
-        if (!$.data(this, 'simpleAccordion')) {
+        if (!$.data(this, 'accordion')) {
           options.selector = this;
-          $.data(this, 'simpleAccordion', new SimpleAccordion(options));
+          $.data(this, 'accordion', new Accordion(options));
         }
       });
     };
