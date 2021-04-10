@@ -36,7 +36,7 @@ Install with npm: `npm install @rickycourtes/accordion`
 Accordion works with a container element and a set of child cell elements
 
 ``` html
-<div class="accordion">
+<div class="accordion" id="accordion-1">
   <div class="accordion_item">
     <button class="accordion_header">
       <div class="accordion_header__label">Accordion Label</div>
@@ -84,6 +84,7 @@ var accordion = new Accordion({
 #### Initiate with jQuery
 
 You can use Accordion as a jQuery plugin: `$('selector').accordion()`
+This will apply the plugin to all matching selectors with the same class.
 
 ``` html
 <!-- JavaScript -->
