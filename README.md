@@ -36,7 +36,7 @@ Install with npm: `npm install @rickycourtes/accordion`
 Accordion works with a container element and a set of child cell elements
 
 ``` html
-<div class="accordion" id="accordion-1">
+<div class="accordion">
   <div class="accordion_item">
     <button class="accordion_header">
       <div class="accordion_header__label">Accordion Label</div>
