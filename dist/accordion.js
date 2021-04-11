@@ -72,8 +72,6 @@
 
     this.init();
   }
-
-  // Add lightweight jQuery wrapper
   
   if (window.jQuery) {
     var $ = window.jQuery;

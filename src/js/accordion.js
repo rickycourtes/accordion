@@ -7,18 +7,16 @@
   'use strict';
 
   function Accordion(options) {
-
     let _this = this;
     let defaultOptions = {
       selector: ".accordion",
       singleExpand: false,
-      expandOnFocus: false
+      expandAll: false,
     }
 
     options = {...defaultOptions, ...options};
 
     this.init = function() {
-
       if (typeof(options.selector) == 'string') {
         this.selector = document.querySelector(options.selector);
       } else {
@@ -26,47 +24,48 @@
       }
 
       if (!this.selector) {
-        if (console) {
-          console.error('Invalid element for Accordion: ' + (queryElement || element));
-        }
+        if (console) console.error('Invalid element Accordion: ' + this.selector);
         return;
       }
 
       this.prepareControls();
     }
-
+    
     this.togglePanel = function(e) {
-      var accordionHeader = this;
-
-      var content = document.getElementById(accordionHeader.getAttribute('aria-controls'));
-      if (!content) return;
-
-      let isExpanded = accordionHeader.getAttribute('aria-expanded') === 'true' || false;
+      e.preventDefault();
+      var header = this;
+      var panel = document.getElementById(header.getAttribute('aria-controls'));
+      if (!panel) return;
 
       if (options.singleExpand) {
         var activeHeader = document.querySelector('.accordion_header[aria-expanded="true"]');
-        if (activeHeader && activeHeader != this) {
+        if (activeHeader && activeHeader != header) {
+          var activePanel = activeHeader.nextElementSibling;
           activeHeader.setAttribute('aria-expanded', 'false');
+          activePanel.classList.toggle('open');
         }
       }
 
-      accordionHeader.setAttribute('aria-expanded', !isExpanded);
+      let isExpanded = header.getAttribute('aria-expanded') === 'true' || false;
+      header.setAttribute('aria-expanded', !isExpanded);
+      panel.classList.toggle('open');
     }
 
     this.prepareControls = function() {
       this.headers = this.selector.querySelectorAll('.accordion_header');
-      this.headers.forEach(function(header, index) {
+      this.headers.forEach(function(header) {
         var panel = header.nextElementSibling;
-        var headers = document.querySelectorAll('.accordion_header');
-        var headerIndex = Array.prototype.slice.call(headers).indexOf(header) + 1;
-
+        var docHeaders = document.querySelectorAll('.accordion_header');
+        var headerIndex = Array.prototype.slice.call(docHeaders).indexOf(header) + 1;
+   
         header.id = 'accordion-header-' + headerIndex;
         header.setAttribute('aria-controls','accordion-panel-' + headerIndex);
-        header.setAttribute('aria-expanded', 'false');
+        header.setAttribute('aria-expanded', options.expandAll);
         header.addEventListener("click", _this.togglePanel, false);
-
+        
         panel.id = 'accordion-panel-' + headerIndex;
         panel.setAttribute('aria-labelledby','accordion-header-' + headerIndex);
+        if (options.expandAll) panel.classList.add('open');
       });
     }
 
