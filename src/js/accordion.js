@@ -24,7 +24,7 @@
       }
 
       if (!this.selector) {
-        if (console) console.error('Invalid element Accordion: ' + this.selector);
+        if (console) console.error('Invalid element for Accordion: ' + this.selector);
         return;
       }
 
