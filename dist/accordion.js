@@ -1,5 +1,5 @@
 /*!
- * Accordion v1.0.3 by @rickycourtes - https://rickycourtes.com/accordion
+ * Accordion v1.0.4 by @rickycourtes - https://rickycourtes.com/accordion
  * License - https://rickycourtes.com/accordion/license
  */
 
@@ -42,7 +42,7 @@
         if (activeHeader && activeHeader != header) {
           var activePanel = activeHeader.nextElementSibling;
           activeHeader.setAttribute('aria-expanded', 'false');
-          activePanel.classList.toggle('open');
+          activePanel.classList.remove('open');
         }
       }
 
