@@ -70,7 +70,7 @@ You can use Accordion with Vanilla JS by calling `new Accordion()`. The `Accordi
 var accordion = new Accordion({
   selector: '.accordion', // Selector can be a string for an idividual element
   singleExpand: false, // Allows only one panel to be exapnded at a time
-  expandOnFocus: false // Expands panels on keyboard focus
+  expandAll: false // Expands all child panels on load
 });
 
 // OR
