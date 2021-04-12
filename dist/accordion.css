@@ -1,5 +1,5 @@
 /*!
- * Accordion v1.0.0 by @rickycourtes - https://rickycourtes.com
+ * Accordion v1.0.2 by @rickycourtes - https://rickycourtes.com
  * License - https://rickycourtes.com/accordion/license
  */
 
