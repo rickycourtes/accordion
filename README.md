@@ -37,22 +37,22 @@ Accordion works with a container element and a set of child cell elements
 
 ``` html
 <div class="accordion">
-  <div class="accordion_item">
-    <button class="accordion_header">
-      <div class="accordion_header__label">Accordion Label</div>
+  <div class="accordion-item">
+    <button class="accordion-header">
+      <div class="accordion-header--label">Accordion Label</div>
     </button>
-    <div class="accordion_panel">
-      <div class="accordion_panel_wrap">
+    <div class="accordion-panel">
+      <div class="accordion-panel-wrap">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum rhoncus porta.</p>
       </div>
     </div>
   </div>
-  <div class="accordion_item">
-    <button class="accordion_header">
-      <div class="accordion_header__label">Accordion Label</div>
+  <div class="accordion-item">
+    <button class="accordion-header">
+      <div class="accordion-header--label">Accordion Label</div>
     </button>
-    <div class="accordion_panel">
-      <div class="accordion_panel_wrap">
+    <div class="accordion-panel">
+      <div class="accordion-panel-wrap">
         <p>Aliquam ut neque congue, dapibus sed, lacinia neque. Aliquam eleifend congue malesuada eget.</p>
       </div>
     </div>
