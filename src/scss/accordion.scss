@@ -1,5 +1,5 @@
 /*!
- * Accordion v1.0.2 by @rickycourtes - https://rickycourtes.com
+ * Accordion v1.0.3 by @rickycourtes - https://rickycourtes.com/accordion
  * License - https://rickycourtes.com/accordion/license
  */
  
@@ -8,21 +8,20 @@
 $accordion-background-light: #f1f1f1;
 $accordion-background-dark: #202020;
 
+
 .accordion {
   overflow: hidden;
   font-size: 1rem;
   margin-bottom: 1.25rem;
   border-radius: 0.5rem;
-  background-color: $accordion-background-light;
-  color: inherit;
   
-  .accordion_item {
+  .accordion-item {
     box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
 
-    @at-root .accordion_header,
-    .accordion_panel_wrap { padding: 0.75rem; }
+    @at-root .accordion-header,
+    .accordion-panel-wrap { padding: 0.75rem; }
 
-    @at-root .accordion_header {
+    @at-root .accordion-header {
       display: flex;
       background: transparent;
       color: inherit;
@@ -36,10 +35,7 @@ $accordion-background-dark: #202020;
       cursor: pointer;
       transition: background 300ms ease;
 
-      &:hover { background-color: darken($accordion-background-light, 5%); }
-      &:focus { background-color: darken($accordion-background-light, 10%); }
-
-      .accordion_header__label {
+      .accordion-header--label {
         flex: 1;
         padding-right: 1rem;
       }
@@ -49,13 +45,13 @@ $accordion-background-dark: #202020;
       &[aria-expanded="true"]:after { content: "\2212"; }
 
       // Expand Panel
-      &[aria-expanded="true"] + .accordion_panel {
+      &[aria-expanded="true"] + .accordion-panel {
         visibility: visible;
         max-height: 100%;
       }
     }
 
-    @at-root .accordion_panel {
+    @at-root .accordion-panel {
       overflow: hidden;
       visibility: hidden;
       max-height: 0;
@@ -73,6 +69,16 @@ $accordion-background-dark: #202020;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
   }
 
+  &.light {
+    background-color: $accordion-background-light;
+    color: inherit;
+
+    .accordion-header {
+      &:hover { background-color: darken($accordion-background-light, 5%); }
+      &:focus { background-color: darken($accordion-background-light, 10%); }
+    }
+  }
+
   &.dark {
     background-color: $accordion-background-dark;
 
@@ -83,10 +89,10 @@ $accordion-background-dark: #202020;
       box-shadow: 0 0 0 1px rgba(255,255,255,0.1);
     }
 
-    .accordion_item {
+    .accordion-item {
       box-shadow: 0 1px 0 0 rgba(255,255,255,0.1);
       
-      .accordion_header {
+      .accordion-header {
         &:hover { background-color: lighten($accordion-background-dark, 5%); }
         &:focus { background-color: lighten($accordion-background-dark, 10%); }
       }
@@ -98,13 +104,13 @@ $accordion-background-dark: #202020;
 
 @media print {
   .accordion { background: transparent; }
-  .accordion_header { padding-bottom: 0; }
-  .accordion_header:after { display: none; }
-  .accordion_header, .accordion_panel_wrap {
+  .accordion-header { padding-bottom: 0; }
+  .accordion-header:after { display: none; }
+  .accordion-header, .accordion-panel-wrap {
     padding-left: 0;
     padding-right: 0;
   }
-  .accordion_panel {     
+  .accordion-panel {     
     overflow: hidden;
     visibility: visible;
     max-height: 100%; 

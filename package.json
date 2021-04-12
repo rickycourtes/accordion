@@ -1,6 +1,6 @@
 {
   "name": "@rickycourtes/accordion",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight, full accessible accordions",
   "main": "src/js/accordion.js",
   "style": "src/scss/accordion.scss",

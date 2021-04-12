@@ -1,5 +1,5 @@
 /*!
- * Accordion v1.0.2 by @rickycourtes - https://rickycourtes.com
+ * Accordion v1.0.3 by @rickycourtes - https://rickycourtes.com/accordion
  * License - https://rickycourtes.com/accordion/license
  */
 
@@ -38,7 +38,7 @@
       if (!panel) return;
 
       if (options.singleExpand) {
-        var activeHeader = document.querySelector('.accordion_header[aria-expanded="true"]');
+        var activeHeader = document.querySelector('.accordion-header[aria-expanded="true"]');
         if (activeHeader && activeHeader != header) {
           var activePanel = activeHeader.nextElementSibling;
           activeHeader.setAttribute('aria-expanded', 'false');
@@ -52,10 +52,10 @@
     }
 
     this.prepareControls = function() {
-      this.headers = this.selector.querySelectorAll('.accordion_header');
+      this.headers = this.selector.querySelectorAll('.accordion-header');
       this.headers.forEach(function(header) {
         var panel = header.nextElementSibling;
-        var docHeaders = document.querySelectorAll('.accordion_header');
+        var docHeaders = document.querySelectorAll('.accordion-header');
         var headerIndex = Array.prototype.slice.call(docHeaders).indexOf(header) + 1;
    
         header.id = 'accordion-header-' + headerIndex;
