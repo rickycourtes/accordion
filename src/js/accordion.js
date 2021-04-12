@@ -1,5 +1,5 @@
 /*!
- * Accordion v1.0.4 by @rickycourtes - https://rickycourtes.com/accordion
+ * Accordion v1.0.5 by @rickycourtes - https://rickycourtes.com/accordion
  * License - https://rickycourtes.com/accordion/license
  */
 
@@ -38,7 +38,7 @@
       if (!panel) return;
 
       if (options.singleExpand) {
-        var activeHeader = document.querySelector('.accordion-header[aria-expanded="true"]');
+        var activeHeader = this.selector.querySelector('.accordion-header[aria-expanded="true"]');
         if (activeHeader && activeHeader != header) {
           var activePanel = activeHeader.nextElementSibling;
           activeHeader.setAttribute('aria-expanded', 'false');
